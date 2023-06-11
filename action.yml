@@ -1,6 +1,6 @@
-name: "Top-Languages - Readme"
+name: 'Top-Languages - Readme'
 author: RyuaNerin
-description: "Add development language usage statistics on your Profile Readme"
+description: 'Add development language usage statistics on your Profile Readme'
 
 inputs:
   GH_TOKEN_DEFAULT:
@@ -83,3 +83,4 @@ runs:
 branding:
   icon: "info"
   color: "blue"
+
