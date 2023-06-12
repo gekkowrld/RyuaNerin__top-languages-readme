@@ -1,6 +1,7 @@
 import datetime
 import os
 
+
 def generate_commit_message(input_string):
     now = datetime.datetime.now()
     current_date = now.strftime("%a %d %b %Y %H:%M:%S")
