@@ -178,10 +178,11 @@ if __name__ == "__main__":
     old_readme = str(base64.b64decode(content.content), "utf-8")
     new_readme = re.sub(listReg, f"{START_COMMENT}\n{stat_str}\n{END_COMMENT}",
                         old_readme)
-    repo.update_file(
-        branch="master",
-        path=content.path,
-        sha=content.sha,
-        message=c_message,
-        content=new_readme,
-    )
+    if new_readme != old_readme:
+        repo.update_file(
+            branch="master",
+            path=content.path,
+            sha=content.sha,
+            message=c_message,
+            content=new_readme,
+        )
