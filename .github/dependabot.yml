@@ -10,4 +10,4 @@ updates:
     schedule:
       interval: "daily"
     ignore:
-      - dependancy-name: "certifi"
+      - dependency-name: "certifi"
