@@ -113,7 +113,7 @@ jobs:
     steps:
       - uses: gekkowrld/langs-readme@gekkowrld
         with:
-	  COMMIT_MESSAGE: "" #Optional
+          COMMIT_MESSAGE: "" #Optional
           USERNAME: <username> # Optional
           LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT" # Optional
           LIST_COUNT: 10 # Optional
