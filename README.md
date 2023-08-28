@@ -113,6 +113,7 @@ jobs:
     steps:
       - uses: gekkowrld/langs-readme@gekkowrld
         with:
+		  COMMIT_MESSAGE: "" #Optional
           USERNAME: <username> # Optional
           LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT" # Optional
           LIST_COUNT: 10 # Optional
@@ -122,6 +123,30 @@ jobs:
           TOP_TOTAL: false # Optional
           SHOW_TOTAL_SEPARATOR: true # Optional
 ```
+
+The default commit message is:
+```txt
+      docs(readme): Update README with ``username``'s current language usage
+
+      Update the README file to include current statistics generated on ``full_year`` at ``full_time`` UTC.
+
+      Committed by <github-actions[bot]> on behalf of <``username``>.
+```
+
+The COMMIT_MESSAGE can be "personalized" by using the following variables:
+
+| Variable | Description |
+|---|---|
+|date| Sets the current date (%Y %H:%M%S)|
+|year| Sets the current year|
+|month_name| Sets the current month name|
+|month_no| Sets the current month number (0 index)|
+|day_name| Sets the current day name|
+|day_no| Sets the current day number(0 index)|
+|hour| Sets the current hour|
+|minute| Sets the current minute|
+|username| Sets the github username|
+
 
 - BLOCKS styles:
 

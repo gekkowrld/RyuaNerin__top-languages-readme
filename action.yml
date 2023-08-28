@@ -31,7 +31,7 @@ inputs:
 
   LIST_COUNT:
     description: "Number of lists to display"
-    default: 10
+    default: 100 # Not sure if this is right
     required: false
 
   LINE_FORMAT:
