@@ -4,15 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-certifi = "==2022.12.7"
-chardet = "==5.1.0"
+certifi = "==2023.7.22"
+chardet = "==5.2.0"
 idna = "==3.4"
 requests = "==2.31.0"
-urllib3 = "==2.0.3"
-wrapt = "==1.12.1"
+urllib3 = "==2.0.4"
+wrapt = "==1.15.0"
 Deprecated = "==1.2.14"
-PyGithub = "==1.53"
-PyJWT = "==2.4.0"
+PyGithub = "==1.59.1"
+PyJWT = "==2.8.0"
 
 [dev-packages]
 
